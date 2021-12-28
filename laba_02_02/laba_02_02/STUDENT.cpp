@@ -78,9 +78,9 @@ STUDENT& STUDENT::operator=(const STUDENT& _copy)
 
 std::ostream& operator<<(std::ostream& out, const STUDENT& o)
 {
-	out << "FIO: " << o.fio << "\n";
-	out << "Group: " << o.group << "\n";
-	out << "Score: ";
+	out << "ФИО: " << o.fio << "\n";
+	out << "Группа: " << o.group << "\n";
+	out << "Успеваемость: ";
 	for (int i = 0; i < N; i++)
 		out << o.score[i] << "\t";
 	out << "\n";

@@ -8,7 +8,7 @@ Text::Text()
 
 	f.open(path);
 	if (f.is_open()) {
-		cout << "Enter word for find: ";
+		cout << "Ввод слова для поиска: ";
 		cin >> word;
 		cout << "\n";
 		while (getline(f, line, '\0'))
@@ -20,11 +20,11 @@ Text::Text()
 		}
 		f.close();
 		if (str.length() == 0)
-			cout << "Not found:" << word << "\n";
+			cout << "Не найдено:" << word << "\n";
 		std::cout << str;
 	}
 	else
-		cout << "Error when I tried open file\n";
+		cout << "Ошибка при попытке открыть файл\n";
 
 }
 
